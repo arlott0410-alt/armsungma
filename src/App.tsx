@@ -227,15 +227,14 @@ const App = () => {
         <div className="container flex h-16 items-center justify-between gap-6 md:h-20">
           {/* Brand */}
           <a href="#hero" className="group flex items-center gap-4">
-            <div className="relative">
-              {/* Logo box (white, crisp, balanced) */}
-             <div className="flex h-14 w-14 items-center justify-center overflow-hidden rounded-xl bg-white ring-1 ring-black/10 md:h-16 md:w-16">
-  <img
-    src="/logo.png"
-    alt="ArmSungMa Logo"
-    className="h-full w-full object-cover"
-  />
-</div>
+            <div className="relative flex shrink-0">
+              <div className="flex h-16 w-16 items-center justify-center overflow-hidden rounded-xl bg-white p-1 ring-1 ring-black/10 md:h-20 md:w-20">
+                <img
+                  src="/logo.png"
+                  alt="ArmSungMa Logo"
+                  className="h-full w-full object-contain"
+                />
+              </div>
             </div>
 
             <div className="leading-tight">
@@ -352,25 +351,26 @@ const App = () => {
                 ))}
               </div>
             </div>
-            <div className="relative">
-  <div className="overflow-hidden rounded-2xl border border-white/10 bg-surface-900/40 shadow-2xl">
-    <div className="relative w-full">
-  <div className="overflow-hidden rounded-2xl border border-white/10 bg-surface-900/40 shadow-2xl">
-    <img
-      src="/hero-preview.jpg"
-      alt="Website preview"
-      className="w-full h-auto object-cover"
-    />
-  </div>
-
-  {/* Glow */}
-  <div className="pointer-events-none absolute -inset-6 -z-10 rounded-3xl bg-accent/10 blur-3xl"></div>
-</div>
-  </div>
-
-  {/* Glow background */}
-  <div className="pointer-events-none absolute -inset-6 -z-10 rounded-3xl bg-accent/10 blur-3xl"></div>
-</div>
+            <div className="relative flex flex-col items-center gap-6">
+              <div className="pointer-events-none absolute -inset-6 -z-10 rounded-3xl bg-accent/10 blur-3xl" aria-hidden />
+              {/* โลโก้ใหญ่ — แสดงเป็นรูปโลโก้เด่น */}
+              <a href="#hero" className="flex shrink-0 focus:outline-none">
+                <div className="flex h-36 w-36 items-center justify-center overflow-hidden rounded-2xl bg-white p-2 shadow-xl ring-1 ring-white/20 md:h-44 md:w-44">
+                  <img
+                    src="/logo.png"
+                    alt="ArmSungMa"
+                    className="h-full w-full object-contain"
+                  />
+                </div>
+              </a>
+              <div className="w-full overflow-hidden rounded-2xl border border-white/10 bg-surface-900/40 shadow-2xl">
+                <img
+                  src="/hero-preview.jpg"
+                  alt="Website preview"
+                  className="w-full h-auto object-cover"
+                />
+              </div>
+            </div>
           </div>
         </section>
 
