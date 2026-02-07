@@ -355,7 +355,7 @@ const App = () => {
               <div className="pointer-events-none absolute -inset-6 -z-10 rounded-3xl bg-accent/10 blur-3xl" aria-hidden />
               {/* โลโก้ใหญ่ — แสดงเป็นรูปโลโก้เด่น */}
               <a href="#hero" className="flex shrink-0 focus:outline-none">
-                <div className="flex h-36 w-36 items-center justify-center overflow-hidden rounded-2xl bg-white p-2 shadow-xl ring-1 ring-white/20 md:h-44 md:w-44">
+                <div className="flex h-36 w-36 items-center justify-center md:h-44 md:w-44">
                   <img
                     src="/logo.png"
                     alt="ArmSungMa"
