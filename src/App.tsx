@@ -14,6 +14,15 @@ const portfolioUrls = [
   'https://corporate-service.pages.dev/',
 ];
 
+const portfolioImages = [
+  'https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=600&h=360&fit=crop',
+  'https://images.unsplash.com/photo-1579684385127-1ef15d508118?w=600&h=360&fit=crop',
+  'https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=600&h=360&fit=crop',
+  'https://images.unsplash.com/photo-1582719508461-905c673771fd?w=600&h=360&fit=crop',
+  'https://images.unsplash.com/photo-1516321318423-f06f85e504b3?w=600&h=360&fit=crop',
+  'https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=600&h=360&fit=crop',
+];
+
 const waLinkWithText = (text: string) => {
   const url = new URL(whatsappLink);
   url.searchParams.set('text', text);
@@ -481,13 +490,19 @@ const App = () => {
                   href={portfolioUrls[index] ?? '#'}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="card flex flex-col justify-between gap-6 transition hover:border-accent/30 hover:bg-white/[0.07]"
+                  className="card overflow-hidden p-0 flex flex-col transition hover:border-accent/30 hover:bg-white/[0.07]"
                 >
-                  <div>
-                    <p className="text-lg font-semibold">{item.title}</p>
-                    {item.desc ? <p className="mt-2 text-sm text-white/60">{item.desc}</p> : null}
+                  <div className="relative aspect-[5/3] w-full overflow-hidden bg-white/5">
+                    <img
+                      src={portfolioImages[index]}
+                      alt=""
+                      className="h-full w-full object-cover transition hover:scale-105"
+                    />
                   </div>
-                  <span className="badge">{dictionary.portfolio.tag}</span>
+                  <div className="flex flex-col gap-2 p-5">
+                    <p className="text-lg font-semibold">{item.title}</p>
+                    {item.desc ? <p className="text-sm text-white/60">{item.desc}</p> : null}
+                  </div>
                 </a>
               ))}
             </div>
