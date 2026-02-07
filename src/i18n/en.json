@@ -15,7 +15,11 @@
     "trust": "Trusted by growing teams in Laos",
     "note": "No pricing on the site — contact for a quote.",
     "cardTitle": "Contact for quote",
-    "cardItems": ["Responsive layout", "Conversion-focused copy", "SEO basics + analytics ready"]
+    "cardItems": [
+      "Responsive layout",
+      "Conversion-focused copy",
+      "SEO basics + analytics ready"
+    ]
   },
   "cta": {
     "whatsapp": "Chat on WhatsApp",
@@ -198,5 +202,41 @@
     "title": "Ready to launch a better website?",
     "subtitle": "Tell us about your business and we will reply with a clear plan.",
     "note": "Contact for quote"
+  },
+  "proof": {
+    "title": "Conversion you can feel",
+    "subtitle": "Clear structure, sharp CTA, and trust signals — designed to turn visits into WhatsApp messages.",
+    "items": [
+      {
+        "name": "Marketing team",
+        "role": "Service business",
+        "text": "More qualified WhatsApp inquiries and faster decisions after launch."
+      },
+      {
+        "name": "Store owner",
+        "role": "Online + delivery",
+        "text": "Customers can message instantly; fewer repetitive questions thanks to a clean FAQ."
+      },
+      {
+        "name": "Manager",
+        "role": "Company site",
+        "text": "Premium look, fast load, and a mobile-first experience that feels trustworthy."
+      }
+    ]
+  },
+  "guarantee": {
+    "title": "Conversion checklist",
+    "bullets": [
+      "Sharp CTA: WhatsApp / Telegram / Call",
+      "Trust signals: work samples, business info, FAQ",
+      "Mobile-first layout that feels premium",
+      "SEO basics + analytics-ready"
+    ]
+  },
+  "ctaband": {
+    "title": "Want a website that closes?",
+    "subtitle": "Message us on WhatsApp with your business type + goal + examples you like.",
+    "primary": "Chat on WhatsApp",
+    "secondary": "Contact for quote"
   }
 }

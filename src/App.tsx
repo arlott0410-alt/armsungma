@@ -36,13 +36,12 @@ const WhatsAppButton = ({
       className={[base, variant === "primary" ? primary : ghost, className].filter(Boolean).join(" ")}
       aria-label={label}
     >
-      <span className="flex h-9 w-9 items-center justify-center rounded-full bg-surface-900/20 overflow-hidden">
-        <img src="/whatsapp.png" alt="" className="h-full w-full object-cover" />
-      </span>
+      <img src="/whatsapp.svg" alt="" className="h-5 w-5 shrink-0" />
       <span>{label}</span>
     </a>
   );
 };
+
 
 const QuoteModal = ({
   open,
@@ -472,6 +471,58 @@ const App = () => {
           </div>
         </section>
 
+
+        <section className="pt-20" id="proof">
+          <div className="container space-y-10">
+            <div className="space-y-3">
+              <p className="text-sm uppercase tracking-[0.3em] text-white/40">{t('proof.title')}</p>
+              <h2 className="text-2xl font-semibold md:text-3xl">{dictionary.proof.title}</h2>
+              <p className="text-white/60">{dictionary.proof.subtitle}</p>
+            </div>
+
+            <div className="grid gap-6 md:grid-cols-3">
+              {dictionary.proof.items.map((it) => (
+                <div key={it.name} className="card space-y-4">
+                  <p className="text-sm text-white/75">“{it.text}”</p>
+                  <div className="pt-2">
+                    <p className="text-sm font-semibold">{it.name}</p>
+                    <p className="text-xs text-white/50">{it.role}</p>
+                  </div>
+                </div>
+              ))}
+            </div>
+
+            <div className="grid gap-6 md:grid-cols-2">
+              <div className="card space-y-4">
+                <h3 className="text-lg font-semibold">{dictionary.guarantee.title}</h3>
+                <ul className="space-y-2 text-sm text-white/75">
+                  {dictionary.guarantee.bullets.map((b) => (
+                    <li key={b} className="flex gap-3">
+                      <span className="mt-1 h-2 w-2 shrink-0 rounded-full bg-accent/80" />
+                      <span>{b}</span>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+
+              <div className="card space-y-4">
+                <h3 className="text-lg font-semibold">{dictionary.ctaband.title}</h3>
+                <p className="text-sm text-white/70">{dictionary.ctaband.subtitle}</p>
+                <div className="flex flex-wrap gap-3 pt-2">
+                  <WhatsAppButton href={whatsappLink} label={dictionary.ctaband.primary} />
+                  <button
+                    type="button"
+                    onClick={() => setQuoteOpen(true)}
+                    className="rounded-full border border-accent/40 bg-accent/10 px-6 py-3 text-sm font-semibold text-accent transition hover:border-accent/70 hover:bg-accent/15"
+                  >
+                    {dictionary.ctaband.secondary}
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
         <section className="pt-20" id="faq">
           <div className="container space-y-10">
             <div className="space-y-3">
@@ -553,9 +604,9 @@ const App = () => {
         id="wa-float"
         href={whatsappLink}
         className="fixed bottom-6 right-6 z-50 flex h-14 w-14 items-center justify-center rounded-full bg-gradient-to-r from-accent to-emerald-400 text-surface-900 shadow-2xl ring-1 ring-white/10 transition hover:scale-105 md:hidden"
-        aria-label="Chat on WhatsApp"
+        aria-label={t('cta.whatsapp')}
       >
-        <img src="/whatsapp.png" alt="" className="h-8 w-8 object-contain" />
+        <img src="/whatsapp.svg" alt="" className="h-7 w-7" />
       </a>
 
     </div>
