@@ -36,9 +36,9 @@ const WhatsAppButton = ({
       className={[base, variant === "primary" ? primary : ghost, className].filter(Boolean).join(" ")}
       aria-label={label}
     >
-      <span className="flex h-9 w-9 items-center justify-center rounded-full bg-surface-900/20">
-          <img src="/whatsapp.png" alt="" className="h-6 w-6 object-contain" />
-        </span>
+      <span className="flex h-9 w-9 items-center justify-center rounded-full bg-surface-900/20 overflow-hidden">
+        <img src="/whatsapp.png" alt="" className="h-full w-full object-cover" />
+      </span>
       <span>{label}</span>
     </a>
   );
@@ -279,7 +279,7 @@ const App = () => {
           <div className="container grid gap-10 md:grid-cols-[1.2fr_0.8fr] md:items-center">
             <div className="space-y-6">
               <span className="badge">{t('hero.label')}</span>
-              <h1 className="text-3xl font-semibold leading-tight md:text-5xl">{t('hero.headline')}</h1>
+              <h1 className="text-3xl font-semibold leading-tight tracking-tight md:text-5xl font-display">{t('hero.headline')}</h1>
               <p className="text-base text-white/70 md:text-lg">{t('hero.subtitle')}</p>
               <div className="flex flex-wrap gap-3">
                 <WhatsAppButton href={whatsappLink} label={t('cta.whatsapp')} />

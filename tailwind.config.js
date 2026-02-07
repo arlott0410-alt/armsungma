@@ -3,6 +3,10 @@ export default {
   content: ['./index.html', './src/**/*.{ts,tsx}'],
   theme: {
     extend: {
+      fontFamily: {
+        sans: ['"Noto Sans Lao"', 'system-ui', '-apple-system', 'Segoe UI', 'Roboto', 'Helvetica', 'Arial', 'sans-serif'],
+        display: ['"Noto Serif Lao"', '"Noto Sans Lao"', 'system-ui', 'serif'],
+      },
       colors: {
         accent: {
           DEFAULT: '#22d3ee',
