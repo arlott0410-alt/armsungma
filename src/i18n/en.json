@@ -4,7 +4,7 @@
     "packages": "Packages",
     "why": "Why Us",
     "process": "Process",
-    "portfolio": "Portfolio",
+    "portfolio": "Work examples",
     "faq": "FAQ",
     "contact": "Contact"
   },
@@ -23,11 +23,14 @@
   },
   "cta": {
     "whatsapp": "Chat on WhatsApp",
+    "whatsappHero": "Get a free quote on WhatsApp",
+    "waIntro": "Hi, I'm interested in a website. Can I get a quote?",
     "telegram": "Telegram",
     "phone": "Call now",
     "quote": "Contact for quote",
     "samples": "Request samples"
   },
+  "heroCtaHint": "We reply within 24 hours",
   "services": {
     "title": "Services",
     "subtitle": "Focused packages for businesses that need results, not noise.",
@@ -140,10 +143,18 @@
     ]
   },
   "portfolio": {
-    "title": "Portfolio",
+    "title": "Work examples",
     "subtitle": "A curated showcase is coming soon. Ask for samples in the meantime.",
     "item": "Project",
-    "tag": "Coming soon"
+    "tag": "Coming soon",
+    "items": [
+      { "title": "Modern Cafe & Restaurant", "desc": "Menu, gallery, reserve via LINE/WhatsApp." },
+      { "title": "Skin Care & Aesthetic Clinic (THEE)", "desc": "Doctor-led consultation, treatments, booking." },
+      { "title": "Home Construction & Renovation", "desc": "New builds, renovation, interior — quote & portfolio." },
+      { "title": "Santara Boutique Resort", "desc": "Luxury tropical beachfront — booking & info." },
+      { "title": "Online Course / Learning", "desc": "Course showcase and enrollment." },
+      { "title": "Grow Your Business Online", "desc": "Digital marketing — Website, SEO, Ads, Social." }
+    ]
   },
   "faq": {
     "title": "Frequently asked questions",

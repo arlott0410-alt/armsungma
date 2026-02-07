@@ -5,6 +5,15 @@ const whatsappLink = 'https://wa.me/8562057105140';
 const telegramLink = 'https://t.me/Arlott_Arlott';
 const phoneLink = 'tel:+8562057105140';
 
+const portfolioUrls = [
+  'https://cafe-53u.pages.dev/',
+  'https://clinic-d3k.pages.dev/',
+  'https://construction-renovation.pages.dev/',
+  'https://hotel-36x.pages.dev/',
+  'https://course-egj.pages.dev/',
+  'https://corporate-service.pages.dev/',
+];
+
 const waLinkWithText = (text: string) => {
   const url = new URL(whatsappLink);
   url.searchParams.set('text', text);
@@ -33,6 +42,8 @@ const WhatsAppButton = ({
   return (
     <a
       href={href}
+      target="_blank"
+      rel="noopener noreferrer"
       className={[base, variant === "primary" ? primary : ghost, className].filter(Boolean).join(" ")}
       aria-label={label}
     >
@@ -182,8 +193,8 @@ const App = () => {
   const [quotePackage, setQuotePackage] = useState<string | undefined>(undefined);
 
   const portfolioItems = useMemo(
-    () => Array.from({ length: 6 }, (_, index) => `${dictionary.portfolio.item} ${index + 1}`),
-    [dictionary.portfolio.item]
+    () => (dictionary.portfolio as { items?: { title: string; desc: string }[] }).items ?? Array.from({ length: 6 }, (_, i) => ({ title: `${dictionary.portfolio.item} ${i + 1}`, desc: '' })),
+    [dictionary.portfolio]
   );
 
   const toggleFaq = (index: number) => {
@@ -280,27 +291,39 @@ const App = () => {
               <span className="badge">{t('hero.label')}</span>
               <h1 className="text-3xl font-semibold leading-tight tracking-tight md:text-5xl font-display">{t('hero.headline')}</h1>
               <p className="text-base text-white/70 md:text-lg">{t('hero.subtitle')}</p>
-              <div className="flex flex-wrap gap-3">
-                <WhatsAppButton href={whatsappLink} label={t('cta.whatsapp')} />
-                <button
-                  type="button"
-                  onClick={() => openQuote()}
-                  className="rounded-full border border-accent/40 bg-accent/10 px-6 py-3 text-sm font-semibold text-accent transition hover:border-accent/70 hover:bg-accent/15"
-                >
-                  {t('cta.quote')}
-                </button>
-<a
-                  href={telegramLink}
-                  className="rounded-full border border-white/20 px-6 py-3 text-sm font-semibold text-white/80 transition hover:border-accent/60"
-                >
-                  {t('cta.telegram')}
-                </a>
-                <a
-                  href={phoneLink}
-                  className="rounded-full border border-white/20 px-6 py-3 text-sm font-semibold text-white/80 transition hover:border-accent/60"
-                >
-                  {t('cta.phone')}
-                </a>
+              <div className="flex flex-col gap-3 sm:flex-row sm:flex-wrap sm:items-center">
+                <div className="flex flex-wrap items-center gap-3">
+                  <a
+                    href={waLinkWithText(t('cta.waIntro'))}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center justify-center gap-2 rounded-full px-7 py-3.5 text-base font-semibold shadow-[0_18px_55px_-24px_rgba(34,211,238,0.75)] ring-1 ring-white/10 transition hover:brightness-[0.98] active:scale-[0.99] bg-gradient-to-r from-accent to-emerald-400 text-surface-900"
+                    aria-label={t('cta.whatsappHero')}
+                  >
+                    <img src="/whatsapp.svg" alt="" className="h-5 w-5 shrink-0" />
+                    <span>{t('cta.whatsappHero')}</span>
+                  </a>
+                  <button
+                    type="button"
+                    onClick={() => openQuote()}
+                    className="rounded-full border border-accent/40 bg-accent/10 px-6 py-3 text-sm font-semibold text-accent transition hover:border-accent/70 hover:bg-accent/15"
+                  >
+                    {t('cta.quote')}
+                  </button>
+                  <a
+                    href={telegramLink}
+                    className="rounded-full border border-white/20 px-6 py-3 text-sm font-semibold text-white/80 transition hover:border-accent/60"
+                  >
+                    {t('cta.telegram')}
+                  </a>
+                  <a
+                    href={phoneLink}
+                    className="rounded-full border border-white/20 px-6 py-3 text-sm font-semibold text-white/80 transition hover:border-accent/60"
+                  >
+                    {t('cta.phone')}
+                  </a>
+                </div>
+                <p className="text-xs text-white/50 sm:order-last sm:w-full">{t('heroCtaHint')}</p>
               </div>
               <div className="flex flex-wrap items-center gap-4 text-xs text-white/60">
                 <span>{t('hero.trust')}</span>
@@ -452,14 +475,20 @@ const App = () => {
               <p className="text-white/60">{dictionary.portfolio.subtitle}</p>
             </div>
             <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
-              {portfolioItems.map((item) => (
-                <div key={item} className="card flex flex-col justify-between gap-6">
+              {portfolioItems.map((item, index) => (
+                <a
+                  key={item.title + index}
+                  href={portfolioUrls[index] ?? '#'}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="card flex flex-col justify-between gap-6 transition hover:border-accent/30 hover:bg-white/[0.07]"
+                >
                   <div>
-                    <p className="text-lg font-semibold">{item}</p>
-                    <p className="mt-2 text-sm text-white/60">{dictionary.portfolio.tag}</p>
+                    <p className="text-lg font-semibold">{item.title}</p>
+                    {item.desc ? <p className="mt-2 text-sm text-white/60">{item.desc}</p> : null}
                   </div>
                   <span className="badge">{dictionary.portfolio.tag}</span>
-                </div>
+                </a>
               ))}
             </div>
             <a
@@ -509,7 +538,7 @@ const App = () => {
                 <h3 className="text-lg font-semibold">{dictionary.ctaband.title}</h3>
                 <p className="text-sm text-white/70">{dictionary.ctaband.subtitle}</p>
                 <div className="flex flex-wrap gap-3 pt-2">
-                  <WhatsAppButton href={whatsappLink} label={dictionary.ctaband.primary} />
+                  <WhatsAppButton href={waLinkWithText(t('cta.waIntro'))} label={dictionary.ctaband.primary} />
                   <button
                     type="button"
                     onClick={() => setQuoteOpen(true)}
@@ -599,12 +628,14 @@ const App = () => {
           </div>
         </div></footer>
 
-{/* Floating WhatsApp (mobile conversion) */}
-<a
+{/* Floating WhatsApp (mobile conversion) — pre-filled intro for higher conversion */}
+      <a
         id="wa-float"
-        href={whatsappLink}
-        className="fixed bottom-6 right-6 z-50 flex h-14 w-14 items-center justify-center rounded-full bg-gradient-to-r from-accent to-emerald-400 text-surface-900 shadow-2xl ring-1 ring-white/10 transition hover:scale-105 md:hidden"
-        aria-label={t('cta.whatsapp')}
+        href={waLinkWithText(t('cta.waIntro'))}
+        target="_blank"
+        rel="noopener noreferrer"
+        className="wa-float fixed bottom-6 right-6 z-50 flex h-14 w-14 items-center justify-center rounded-full bg-gradient-to-r from-accent to-emerald-400 text-surface-900 shadow-2xl ring-2 ring-white/20 transition hover:scale-105 active:scale-95 md:hidden"
+        aria-label={t('cta.whatsappHero')}
       >
         <img src="/whatsapp.svg" alt="" className="h-7 w-7" />
       </a>
