@@ -1,0 +1,204 @@
+{
+  "nav": {
+    "services": "ບໍລິການ",
+    "packages": "ແພັກເກັດ",
+    "why": "ເລືອກເຮົາ",
+    "process": "ຂັ້ນຕອນ",
+    "portfolio": "ຜົນງານ",
+    "faq": "ຄໍາຖາມ",
+    "contact": "ຕິດຕໍ່"
+  },
+  "hero": {
+    "label": "ບໍລິການເວັບທັນສະໄໝ",
+    "headline": "ArmSungMa — ເວັບໄຊທ໌ທີ່ນໍາລູກຄ້າມາ",
+    "subtitle": "ພວກເຮົາອອກແບບເວັບທີ່ໄວ ແລະ ນ່າເຊື່ອຖື ເພື່ອໃຫ້ຜູ້ເຂົ້າຊົມຕັດສິນໃຈຕິດຕໍ່.",
+    "trust": "ບໍລິສັດເຕີບໂຕໃນລາວໄວ້ໃຈພວກເຮົາ",
+    "note": "ບໍ່ສະແດງລາຄາ — ຕິດຕໍ່ເພື່ອຮັບໃບສະເໜີ.",
+    "cardTitle": "ຕິດຕໍ່ເພື່ອຮັບໃບສະເໜີ",
+    "cardItems": ["ຮູບແບບຕອບສະນອງ", "ເນື້ອຫາເນັ້ນການຕິດຕໍ່", "SEO ພື້ນຖານ + ພ້ອມ analytics"]
+  },
+  "cta": {
+    "whatsapp": "ແຊັດ WhatsApp",
+    "telegram": "Telegram",
+    "phone": "ໂທຫາເລີຍ",
+    "quote": "ຕິດຕໍ່ເພື່ອຮັບໃບສະເໜີ",
+    "samples": "ຂໍຕົວຢ່າງຜົນງານ"
+  },
+  "services": {
+    "title": "ບໍລິການ",
+    "subtitle": "ແພັກເກັດທີ່ເນັ້ນຜົນລັບ ບໍ່ເນັ້ນຄວາມຫຼາຍເກີນ.",
+    "items": [
+      {
+        "title": "Landing Page",
+        "desc": "ໜ້າດຽວເນັ້ນການເກັບລູກຄ້າສົນໃຈ ດ້ວຍ CTA ຊັດເຈນ."
+      },
+      {
+        "title": "ເວັບບໍລິສັດ",
+        "desc": "ເວັບຫຼາຍສ່ວນ ຫຼື ຫຼາຍໜ້າ ສະແດງຄວາມນ່າເຊື່ອຖື."
+      },
+      {
+        "title": "ຮ້ານຄ້າອອນລາຍ",
+        "desc": "ສະແດງສິນຄ້າແບບງ່າຍ ແລະ ເສັ້ນທາງສັ່ງຊື້ຊັດເຈນ."
+      }
+    ]
+  },
+  "packages": {
+    "title": "ແພັກເກັດທີ່ຂາຍໄດ້",
+    "subtitle": "ໂຄງສ້າງຊັດ, ເນື້ອຫາເນັ້ນການຕິດຕໍ່, ແລະ CTA ພາໄປ WhatsApp/Telegram. ລາຄາຂຶ້ນກັບ scope — ຕິດຕໍ່ເພື່ອຮັບໃບສະເໜີ.",
+    "items": [
+      {
+        "title": "Starter",
+        "highlight": "Popular",
+        "desc": "Landing Page ເນັ້ນປິດການຂາຍ / ເກັບລີດ ພ້ອມ trust signals.",
+        "features": [
+          "Hero + CTA ຊັດເຈນ (WhatsApp/Telegram/Call)",
+          "Services/Offer cards",
+          "FAQ + Contact section",
+          "SEO ພື້ນຖານ (title, meta, structure)",
+          "Mobile-first + Performance"
+        ],
+        "note": "ເໝາະສຳລັບ: ໂປຣໂມດ 1 ແຄມເປນ / 1 ບໍລິການ"
+      },
+      {
+        "title": "Growth",
+        "highlight": "Best value",
+        "desc": "Company Website ທີ່ສະແດງຄວາມນ່າເຊື່ອຖື ແລະ ປິດການຂາຍໄດ້ງ່າຍ.",
+        "features": [
+          "ຫຼາຍ sections/ຫຼາຍໜ້າ (About, Services, Portfolio)",
+          "Lead capture ຟອມ (ສົ່ງເຂົ້າ WhatsApp)",
+          "Review/Testimonials section",
+          "Analytics-ready",
+          "ໂຄງສ້າງຂະຫຍາຍຕໍ່ໄດ້"
+        ],
+        "note": "ເໝາະສຳລັບ: ບໍລິສັດ/ທີມທີ່ຕ້ອງການເວັບຫຼັກ"
+      },
+      {
+        "title": "Pro",
+        "highlight": "Scale",
+        "desc": "Full funnel: ໜ້າຂາຍ + ໜ້າເນື້ອຫາ + ສື່ສານສຳລັບ conversion.",
+        "features": [
+          "Conversion audit (structure + CTA)",
+          "Content plan + key sections",
+          "Multi-language (LO/EN)",
+          "On-page SEO ພ້ອມ schema basics",
+          "Support ຫຼັງສົ່ງມອບ (ຕາມຂໍ້ຕົກລົງ)"
+        ],
+        "note": "ເໝາະສຳລັບ: ຂະຫຍາຍຍອດຂາຍ ແລະ SEO"
+      }
+    ]
+  },
+  "quote": {
+    "badge": "Request quote",
+    "title": "Tell us what you need",
+    "subtitle": "Fill in the basics — we will message you back on WhatsApp.",
+    "close": "Close",
+    "send": "Send to WhatsApp",
+    "direct": "Open WhatsApp",
+    "note": "We will reply with scope + quote.",
+    "notSpecified": "Not specified",
+    "name": "Name",
+    "namePh": "Your name",
+    "business": "Business",
+    "businessPh": "Brand / company name",
+    "goal": "Goal",
+    "goalPh": "What do you want this website to achieve?",
+    "package": "Package",
+    "packagePh": "Starter / Growth / Pro (optional)",
+    "timeline": "Timeline",
+    "timelinePh": "When do you need it?"
+  },
+  "why": {
+    "title": "ເປັນຫຍັງຕ້ອງ ArmSungMa",
+    "items": [
+      {
+        "title": "ໂຄງສ້າງເນັ້ນການຕິດຕໍ່",
+        "desc": "ນໍາທາງໃຫ້ຜູ້ເຂົ້າຊົມຕັດສິນໃຈງ່າຍ."
+      },
+      {
+        "title": "ອອກແບບເພື່ອມືຖື",
+        "desc": "ລູກຄ້າໃຊ້ມືຖືເປັນຫຼັກ ເຮົາເຮັດໃຫ້ສວຍໃນຈໍນ້ອຍ."
+      },
+      {
+        "title": "ໄວ ແລະ ເບົາ",
+        "desc": "ໂຫຼດໄວ ເຂົ້າເຖິງໄດ້ທັນທີ."
+      },
+      {
+        "title": "ສື່ສານຊັດເຈນ",
+        "desc": "ຕອບກັບໄວຜ່ານ WhatsApp ຫຼື Telegram."
+      },
+      {
+        "title": "ຂະຫຍາຍຕໍ່ໄດ້",
+        "desc": "ວາງໂຄງສ້າງໃຫ້ຕໍ່ຍອດໄດ້ໃນອະນາຄົດ."
+      }
+    ]
+  },
+  "process": {
+    "title": "ຂັ້ນຕອນການເຮັດວຽກ",
+    "steps": [
+      {
+        "title": "ສຳຫຼວດ",
+        "desc": "ຮູ້ເປົ້າໝາຍ ແລະ ກຸ່ມລູກຄ້າຂອງທ່ານ."
+      },
+      {
+        "title": "ວາງແຜນເນື້ອຫາ",
+        "desc": "ກຳນົດໂຄງຮ່າງ ແລະ CTA ທີ່ຈຳເປັນ."
+      },
+      {
+        "title": "ອອກແບບ & ພັດທະນາ",
+        "desc": "ສ້າງໜ້າທີ່ທັນສະໄໝ ແລະ ຕອບສະນອງ."
+      },
+      {
+        "title": "ທົບທວນ",
+        "desc": "ປັບແຕ່ງຕາມຄວາມຄິດເຫັນຈົນພໍໃຈ."
+      },
+      {
+        "title": "ເປີດໃຊ້ງານ",
+        "desc": "ເຮັດໃຫ້ເວັບຂອງທ່ານພ້ອມຮັບລູກຄ້າ."
+      }
+    ]
+  },
+  "portfolio": {
+    "title": "ຜົນງານ",
+    "subtitle": "ກຳລັງຈັດທຳຜົນງານໃຫ້ເປັນທາງການ. ຂໍຕົວຢ່າງກ່ອນໄດ້.",
+    "item": "ໂຄງການ",
+    "tag": "Coming soon"
+  },
+  "faq": {
+    "title": "ຄໍາຖາມທີ່ພົບເລື້ອຍ",
+    "items": [
+      {
+        "q": "ເຮັດ Landing Page ໃຊ້ເວລາດົນປານໃດ?",
+        "a": "ໂດຍປົກກະຕິ 7–12 ມື້ ຂຶ້ນກັບເນື້ອຫາແລະການປັບແຕ່ງ."
+      },
+      {
+        "q": "ຊ່ວຍເຂົ້າເນື້ອຫາໄດ້ບໍ?",
+        "a": "ໄດ້. ພວກເຮົາສາມາດເຂົ້າເນື້ອຫາພາສາລາວ ຫຼື ອັງກິດ."
+      },
+      {
+        "q": "ສາມາດປັບໃໝ່ເວັບເກົ່າໄດ້ບໍ?",
+        "a": "ໄດ້. ເຮົາປັບປຸງຮູບແບບ ແລະ ເນື້ອຫາໃຫ້ທັນສະໄໝ."
+      },
+      {
+        "q": "ມີ SEO ຫຼື ບໍ?",
+        "a": "ມີ. ພວກເຮົາໃສ່ SEO ຂັ້ນພື້ນຖານເຊັ່ນ title ແລະ meta."
+      },
+      {
+        "q": "ເວັບໃຊ້ມືຖືໄດ້ດີບໍ?",
+        "a": "ໄດ້ດີຫຼາຍ. ອອກແບບແບບ mobile-first."
+      },
+      {
+        "q": "ຮັບໃບສະເໜີແນວໃດ?",
+        "a": "ສົ່ງຂໍ້ຄວາມຜ່ານ WhatsApp ຫຼື Telegram ພ້ອມເປົ້າໝາຍ."
+      },
+      {
+        "q": "ສາມາດເພີ່ມໜ້າພາຍຫຼັງໄດ້ບໍ?",
+        "a": "ໄດ້. ໂຄງສ້າງຖືກວາງໃຫ້ຂະຫຍາຍຕໍ່ໄດ້."
+      }
+    ]
+  },
+  "final": {
+    "title": "ພ້ອມສ້າງເວັບທີ່ດີກວ່າບໍ?",
+    "subtitle": "ບອກເຮົາເກືອບເປົ້າໝາຍ ແລະ ພວກເຮົາຈະຕອບກັບ.",
+    "note": "ຕິດຕໍ່ເພື່ອຮັບໃບສະເໜີ"
+  }
+}

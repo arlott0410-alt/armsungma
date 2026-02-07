@@ -1,0 +1,202 @@
+{
+  "nav": {
+    "services": "Services",
+    "packages": "Packages",
+    "why": "Why Us",
+    "process": "Process",
+    "portfolio": "Portfolio",
+    "faq": "FAQ",
+    "contact": "Contact"
+  },
+  "hero": {
+    "label": "Modern web service",
+    "headline": "ArmSungMa — Websites that bring customers",
+    "subtitle": "We design fast, credible websites that convert visitors into messages. Clear structure, mobile-first layout, and a focus on trust.",
+    "trust": "Trusted by growing teams in Laos",
+    "note": "No pricing on the site — contact for a quote.",
+    "cardTitle": "Contact for quote",
+    "cardItems": ["Responsive layout", "Conversion-focused copy", "SEO basics + analytics ready"]
+  },
+  "cta": {
+    "whatsapp": "Chat on WhatsApp",
+    "telegram": "Telegram",
+    "phone": "Call now",
+    "quote": "Contact for quote",
+    "samples": "Request samples"
+  },
+  "services": {
+    "title": "Services",
+    "subtitle": "Focused packages for businesses that need results, not noise.",
+    "items": [
+      {
+        "title": "Landing Page",
+        "desc": "A single-page experience built to capture leads with clear calls-to-action and trust signals."
+      },
+      {
+        "title": "Company Website",
+        "desc": "Multi-section or multi-page sites that show credibility, services, and company story."
+      },
+      {
+        "title": "Online Store",
+        "desc": "Simple product catalogs with clear ordering paths and contact-driven checkout."
+      }
+    ]
+  },
+  "packages": {
+    "title": "Packages that sell",
+    "subtitle": "Clear deliverables, clean structure, and a strong path to WhatsApp/Telegram. Pricing depends on scope — request a quote.",
+    "items": [
+      {
+        "title": "Starter (Lead Capture)",
+        "highlight": "Most chosen",
+        "desc": "For businesses that need a high-converting page and a simple, credible presence.",
+        "features": [
+          "1 hero section + clear CTA",
+          "Services / offer section",
+          "Trust section + FAQs",
+          "Click-to-chat (WhatsApp/Telegram) + call button",
+          "Basic on-page SEO (title/meta/structure)"
+        ],
+        "note": "Best for: quick campaigns and ads"
+      },
+      {
+        "title": "Growth (Company Website)",
+        "desc": "For teams that need stronger credibility, more sections, and a structured sales story.",
+        "features": [
+          "Multi-section layout (services, process, portfolio)",
+          "Lead capture form (sends to WhatsApp)",
+          "Copywriting support (Lao/English)",
+          "Performance + mobile-first UX",
+          "Easy future expansion"
+        ],
+        "note": "Best for: agencies, SMEs, service businesses"
+      },
+      {
+        "title": "Pro (Full Funnel)",
+        "desc": "For brands that want a premium feel, clearer conversion flow, and scalable structure.",
+        "features": [
+          "Premium UI polish + consistent brand system",
+          "Conversion-focused sections and CTAs",
+          "Advanced content structure (landing + supporting pages)",
+          "Analytics-ready setup (optional)",
+          "Handover + basic training"
+        ],
+        "note": "Best for: brands that want long-term growth"
+      }
+    ]
+  },
+  "why": {
+    "title": "Why choose ArmSungMa",
+    "items": [
+      {
+        "title": "Conversion-first structure",
+        "desc": "We guide visitors from interest to contact without distractions."
+      },
+      {
+        "title": "Mobile-first craftsmanship",
+        "desc": "Most customers are on phones — we design for that reality first."
+      },
+      {
+        "title": "Speed and performance",
+        "desc": "Lightweight builds, fast loading, and smooth scrolling experiences."
+      },
+      {
+        "title": "Clear collaboration",
+        "desc": "We keep communication simple and respond fast on WhatsApp or Telegram."
+      },
+      {
+        "title": "Ready for growth",
+        "desc": "Scalable structure that can expand into new pages or features later."
+      }
+    ]
+  },
+  "process": {
+    "title": "Process",
+    "steps": [
+      {
+        "title": "Discovery",
+        "desc": "We learn about your business goals, audience, and preferred style."
+      },
+      {
+        "title": "Content planning",
+        "desc": "We outline sections, copy direction, and the calls-to-action."
+      },
+      {
+        "title": "Design & build",
+        "desc": "We craft a modern layout and develop a responsive page."
+      },
+      {
+        "title": "Review",
+        "desc": "You review, we refine until it feels right and clear."
+      },
+      {
+        "title": "Launch",
+        "desc": "We deploy and make sure your customers can reach you easily."
+      }
+    ]
+  },
+  "portfolio": {
+    "title": "Portfolio",
+    "subtitle": "A curated showcase is coming soon. Ask for samples in the meantime.",
+    "item": "Project",
+    "tag": "Coming soon"
+  },
+  "faq": {
+    "title": "Frequently asked questions",
+    "items": [
+      {
+        "q": "How long does a landing page take?",
+        "a": "Most landing pages take 7–12 days depending on content readiness and revisions."
+      },
+      {
+        "q": "Do you write the copy?",
+        "a": "Yes. We can write concise copy in Lao or English and align it with your goals."
+      },
+      {
+        "q": "Can you redesign an existing site?",
+        "a": "Yes. We can refresh layout, copy, and structure while keeping your brand."
+      },
+      {
+        "q": "Is SEO included?",
+        "a": "We include on-page SEO basics like titles, meta descriptions, and clean structure."
+      },
+      {
+        "q": "Will the site work on mobile?",
+        "a": "Absolutely. Every layout is mobile-first with accessible buttons."
+      },
+      {
+        "q": "How do we get a quote?",
+        "a": "Message us on WhatsApp or Telegram with your goals and timeline."
+      },
+      {
+        "q": "Can we add more pages later?",
+        "a": "Yes. We build with a scalable structure so you can grow when ready."
+      }
+    ]
+  },
+  "quote": {
+    "badge": "Quote",
+    "title": "Request a quote",
+    "subtitle": "Fill this quickly — we will open WhatsApp with a ready-to-send message.",
+    "name": "Name",
+    "namePh": "Your name",
+    "business": "Business",
+    "businessPh": "Business name / page / brand",
+    "goal": "Goal",
+    "goalPh": "What do you want the website to achieve?",
+    "package": "Package",
+    "packagePh": "Starter / Growth / Pro (optional)",
+    "timeline": "Timeline",
+    "timelinePh": "When do you need it? (optional)",
+    "notSpecified": "Not specified",
+    "close": "Close",
+    "send": "Open WhatsApp message",
+    "direct": "Chat directly",
+    "note": "No spam. This just helps us estimate scope."
+  },
+  "final": {
+    "title": "Ready to launch a better website?",
+    "subtitle": "Tell us about your business and we will reply with a clear plan.",
+    "note": "Contact for quote"
+  }
+}
