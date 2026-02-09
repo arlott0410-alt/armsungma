@@ -228,7 +228,7 @@ const App = () => {
           {/* Brand */}
           <a href="#hero" className="group flex items-center gap-4">
             <div className="relative flex shrink-0">
-              <div className="flex h-16 w-16 items-center justify-center overflow-hidden rounded-xl bg-white p-1 ring-1 ring-black/10 md:h-20 md:w-20">
+              <div className="flex h-16 w-16 items-center justify-center md:h-20 md:w-20">
                 <img
                   src="/logo.png"
                   alt="ArmSungMa Logo"
@@ -377,7 +377,7 @@ const App = () => {
         <section className="pt-20" id="services">
           <div className="container space-y-10">
             <div className="space-y-3">
-              <p className="text-sm uppercase tracking-[0.3em] text-white/40">{t('nav.services')}</p>
+              <p className="text-sm uppercase tracking-[0.3em] text-white/50">{t('nav.services')}</p>
               <h2 className="text-2xl font-semibold md:text-3xl">{dictionary.services.title}</h2>
               <p className="text-white/60">{dictionary.services.subtitle}</p>
             </div>
@@ -403,7 +403,7 @@ const App = () => {
         <section className="pt-20" id="packages">
           <div className="container space-y-10">
             <div className="space-y-3">
-              <p className="text-sm uppercase tracking-[0.3em] text-white/40">{t('nav.packages')}</p>
+              <p className="text-sm uppercase tracking-[0.3em] text-white/50">{t('nav.packages')}</p>
               <h2 className="text-2xl font-semibold md:text-3xl">{dictionary.packages.title}</h2>
               <p className="text-white/60">{dictionary.packages.subtitle}</p>
             </div>
@@ -446,7 +446,7 @@ const App = () => {
         <section className="pt-20" id="why">
           <div className="container space-y-10">
             <div className="space-y-3">
-              <p className="text-sm uppercase tracking-[0.3em] text-white/40">{t('nav.why')}</p>
+              <p className="text-sm uppercase tracking-[0.3em] text-white/50">{t('nav.why')}</p>
               <h2 className="text-2xl font-semibold md:text-3xl">{dictionary.why.title}</h2>
             </div>
             <div className="grid gap-6 md:grid-cols-2">
@@ -463,7 +463,7 @@ const App = () => {
         <section className="pt-20" id="process">
           <div className="container space-y-10">
             <div className="space-y-3">
-              <p className="text-sm uppercase tracking-[0.3em] text-white/40">{t('nav.process')}</p>
+              <p className="text-sm uppercase tracking-[0.3em] text-white/50">{t('nav.process')}</p>
               <h2 className="text-2xl font-semibold md:text-3xl">{dictionary.process.title}</h2>
             </div>
             <div className="grid gap-6 md:grid-cols-5">
@@ -483,7 +483,7 @@ const App = () => {
         <section className="pt-20" id="portfolio">
           <div className="container space-y-10">
             <div className="space-y-3">
-              <p className="text-sm uppercase tracking-[0.3em] text-white/40">{t('nav.portfolio')}</p>
+              <p className="text-sm uppercase tracking-[0.3em] text-white/50">{t('nav.portfolio')}</p>
               <h2 className="text-2xl font-semibold md:text-3xl">{dictionary.portfolio.title}</h2>
               <p className="text-white/60">{dictionary.portfolio.subtitle}</p>
             </div>
@@ -525,7 +525,7 @@ const App = () => {
         <section className="pt-20" id="proof">
           <div className="container space-y-10">
             <div className="space-y-3">
-              <p className="text-sm uppercase tracking-[0.3em] text-white/40">{t('proof.title')}</p>
+              <p className="text-sm uppercase tracking-[0.3em] text-white/50">{t('proof.title')}</p>
               <h2 className="text-2xl font-semibold md:text-3xl">{dictionary.proof.title}</h2>
               <p className="text-white/60">{dictionary.proof.subtitle}</p>
             </div>
@@ -576,7 +576,7 @@ const App = () => {
         <section className="pt-20" id="faq">
           <div className="container space-y-10">
             <div className="space-y-3">
-              <p className="text-sm uppercase tracking-[0.3em] text-white/40">{t('nav.faq')}</p>
+              <p className="text-sm uppercase tracking-[0.3em] text-white/50">{t('nav.faq')}</p>
               <h2 className="text-2xl font-semibold md:text-3xl">{dictionary.faq.title}</h2>
             </div>
             <div className="grid gap-4">
@@ -604,7 +604,7 @@ const App = () => {
               <div className="space-y-3">
                 <h2 className="text-2xl font-semibold md:text-3xl">{dictionary.final.title}</h2>
                 <p className="text-white/60">{dictionary.final.subtitle}</p>
-                <p className="text-xs uppercase tracking-[0.3em] text-white/40">{dictionary.final.note}</p>
+                <p className="text-xs uppercase tracking-[0.3em] text-white/50">{dictionary.final.note}</p>
               </div>
               <div className="flex flex-wrap gap-3">
                 <WhatsAppButton href={whatsappLink} label={t('cta.whatsapp')} />
